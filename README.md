@@ -1,4 +1,4 @@
-## 🕹️ Arirang APP
+## 🎵 Arirang APP
 
 
 Este proyecto fue desarrollado como parte de la carrera **Analista en Sistemas** en la **Escuela DaVinci**, dentro de la materia **Aplicaciones móviles**.
