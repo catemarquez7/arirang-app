@@ -8,7 +8,7 @@ Su objetivo fue analizar y desarrollar un sistema de utilizando *Android Studio*
 
 ### 🎯 Objetivo del proyecto
 
-Diseñar y desarrollar una *app** que posea un funcionamiento basico.
+Diseñar y desarrollar una **app** que posea un funcionamiento basico.
 
 ---
 
