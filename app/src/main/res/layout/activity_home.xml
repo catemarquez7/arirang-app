@@ -5,6 +5,206 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/cremita"
     tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent="1"
+            app:srcCompat="@drawable/logosf" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/mostrarNombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/mostrarNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/fondo_texto"
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header" />
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:text="Enterate de las últimas novedades"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/mostrarNombre"
+        app:layout_constraintStart_toStartOf="@id/mostrarNombre"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/articulo1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/fondo_texto"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensaje" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/articulo1"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/botonArticulo1"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            android:text="Ver"
+            android:textSize="8dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/rojo"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#F0ECEC"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leé la entrevista para Rolling Stone."
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:textSize="11dp"
+        app:layout_constraintTop_toBottomOf="@id/articulo1"
+        app:layout_constraintStart_toStartOf="@id/articulo1"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/articulo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fondo_texto"
+        app:layout_constraintHeight_percent="0.26"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/articulo1" >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/articulo2"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/botonArticulo2"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            android:text="Ver"
+            android:textSize="8dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/rojo"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#F0ECEC"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escuchá el 5to album de studio de BTS."
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:textSize="11dp"
+        app:layout_constraintTop_toBottomOf="@id/articulo2"
+        app:layout_constraintStart_toStartOf="@id/articulo2"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <ImageView
+            android:id="@+id/imgVideo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/video"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

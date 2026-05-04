@@ -5,6 +5,248 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Videos">
+    android:background="@color/cremita"
+    tools:context=".Home">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.09"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="110dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent="1"
+            app:srcCompat="@drawable/logosf" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintBottom_toTopOf="@id/mensaje"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:text="Los mas vistos!"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/video1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fondo_texto"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mensaje" >
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/swim"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/botonVideo1"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            android:text="Ver"
+            android:textSize="8dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/rojo"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#F0ECEC"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mirá el MV de Swim."
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:textSize="11dp"
+        app:layout_constraintTop_toBottomOf="@id/video1"
+        app:layout_constraintStart_toStartOf="@id/video1"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/video2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fondo_texto"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video1" >
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/run"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/botonVideo2"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            android:text="Ver"
+            android:textSize="8dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/rojo"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#F0ECEC"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/texto2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volvieron los Runs!"
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:textSize="11dp"
+        app:layout_constraintTop_toBottomOf="@id/video2"
+        app:layout_constraintStart_toStartOf="@id/video2"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/video3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/fondo_texto"
+        app:layout_constraintHeight_percent="0.20"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video2" >
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:srcCompat="@drawable/dos"
+            android:scaleType="fitCenter"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/botonVideo3"
+            android:layout_width="64dp"
+            android:layout_height="30dp"
+            android:text="Ver"
+            android:textSize="8dp"
+            android:layout_margin="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:backgroundTint="@color/rojo"
+            android:fontFamily="@font/inter_black"
+            android:textColor="#F0ECEC"
+            app:cornerRadius="0dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="1dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Detrás de escena de 2.0"
+        android:fontFamily="@font/inter_black"
+        android:gravity="center"
+        android:textSize="11dp"
+        app:layout_constraintTop_toBottomOf="@id/video3"
+        app:layout_constraintStart_toStartOf="@id/video3"/>
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" >
+
+        <ImageView
+            android:id="@+id/imgHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/home"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

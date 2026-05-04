@@ -28,17 +28,15 @@ public class Registro extends AppCompatActivity {
         botonRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String nombre = nombreInput.getText().toString();
-                String email = emailInput.getText().toString();
+                String nombreStr = nombreInput.getText().toString();
+                String emailStr = emailInput.getText().toString();
 
-                if (nombre.isEmpty() || email.isEmpty()) {
+                if (nombreStr.isEmpty() || emailStr.isEmpty()) {
                     Toast.makeText(Registro.this, "Completá todos los campos.", LENGTH_SHORT).show();
-                    return;
-
                 } else {
                     Intent intent = new Intent(Registro.this, Home.class);
-                    intent.putExtra("nombre", nombre);
-                    intent.putExtra("email", email);
+                    intent.putExtra("nombre", nombreStr);
+                    intent.putExtra("email", emailStr);
                     startActivity(intent);
 
                 }
