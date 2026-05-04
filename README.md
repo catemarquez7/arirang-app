@@ -40,7 +40,7 @@ En progreso.
 
 ---
 
-### Maquetado
+### ✏️ Maquetado
 
 [Ver diseño en Figma](https://www.figma.com/design/a6sNsFXc4HxlhyrpCQTVqx/parcial1Moviles?node-id=0-1&t=AumFHQ43triqwlLd-1)
 
