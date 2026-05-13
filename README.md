@@ -36,8 +36,7 @@ Proyecto desarrollado y ejecutado en **entorno local**, como aplicación académ
 
 ### 📌 Estado del proyecto
 
-En progreso.
-
+Finalizado.
 ---
 
 ### ✏️ Maquetado
